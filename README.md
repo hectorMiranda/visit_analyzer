@@ -28,14 +28,8 @@ rmv install 2.3.1
 ```
 rvm use 2.3.1@sense360 --create
 ```
-4. Install dependencies
 
-Highline is a nice and simple framework for creating console applications
-
-```
-sudo gem install --no-rdoc --no-ri highline
-```
-5. Change permissions to make application file executable
+4. Change permissions to make application file executable
 ```
 chmod +x application.rb
 ```
@@ -46,10 +40,11 @@ I tried to keep this application as simple as possible, data is stored in a CSV 
 
 Given the nature of the problem I have decided to use a simple algorithm: k-means clustering.
 
-K-means a simple unsupervised machine learning algorithm that groups a dataset into a user specified number (k) of clusters. This algorithm is somewhat naive in the sense that it clusters the data into k clusters, even if k is not the right number of clusters to use.
+K-means a simple unsupervised machine learning algorithm that groups a dataset into a user specified number (k) of clusters.
 
 The k-means clustering algorithm takes in, as input, a set of visits that represent points in the 2 dimensional plane. As output, visits will be grouped into k clusters. Unfortunately, the algorithm can't decide how many groups there are, so k is being set with a default value.
 
+I have tweak the algorithm to exclude data that is older than 1 week and to update the total number of hours spent on each resulting cluster
 
 ### Running the program
 
