@@ -1,5 +1,5 @@
 class Cluster
-    attr_accessor :center, :visits
+    attr_accessor :center, :visits, :time_spent_in_minutes
 
     def initialize(center)
         @center = center
@@ -14,6 +14,8 @@ class Cluster
         @visits.each do |visit|
             lat += visit.latitude
             lon += visit.longitude
+            @time_spent_in_minutes = 0
+            # @time_spent_in_minutes += visit.time_spent_in_minutes unless visit.time_spent_in_minutes.nil?
         end
 
         # Now average out the coordinates

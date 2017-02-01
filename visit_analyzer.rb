@@ -80,14 +80,23 @@ if __FILE__ == $PROGRAM_NAME
         visits.push visit
     end
 
-    # Run algorithm on data
+    # This will group the visits together
     clusters = kmeans(visits, clusters_to_find)
 
+    clusters.each do |cluster|
+        # iterates the visits in each of these cluster to identify those that
+        # they have spent a minimun of 30 hours and arrival - 1.week != PreviousWeek
+    end
+
+    # using this to debug execution...
     clusters.each_with_index do |cluster, i|
-        puts i
+        puts "Cluster #{i}"
+        total_time_in_cluster = 0
         cluster.visits.each do |visit|
+            total_time_in_cluster += visit.time_spent_in_minutes
             puts visit.to_s
         end
+        puts "Time spent in minutes #{cluster.time_spent_in_minutes}"
     end
 
 end
