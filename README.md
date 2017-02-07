@@ -1,5 +1,3 @@
-# Sense360 Code Challenge
-
 The following program allows you to test a classifier function against some csv data.
 
 ## Getting Started
@@ -47,9 +45,4 @@ My original intention was to tweak the algorithm to exclude data that is older t
 First argument represents a CSV file with visit data
 Second argument represents the numbers of clusters that will be created
 
-### TODO
 
-* Define more datasets (CSV files) for testing: Having a dataset define would have been helpful to test the functionality of this application, putting together valid data takes a while.
-* Validating the function with multiples datasets while verifying that only eligible visits are included in the resulting clusters
-* While testing my input data I found some cases where the number of clusters define will cause an out of range exception if we don't have enough data to put on those clusters...
-* I realize at a very late stage, that having to define the number of clusters in advance limits this implementation a lot, probably there is a better way to accomplish this implementation.
