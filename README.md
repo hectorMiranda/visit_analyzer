@@ -45,4 +45,15 @@ My original intention was to tweak the algorithm to exclude data that is older t
 First argument represents a CSV file with visit data
 Second argument represents the numbers of clusters that will be created
 
+### Testing
 
+This application uses Rspec, to install it run:
+
+```
+gem install rspec
+```
+
+After installation is completed run:
+```
+rspespec -f d spec
+```
