@@ -55,5 +55,5 @@ gem install rspec
 
 After installation is completed run:
 ```
-rspespec -f d spec
+rspec spec -f d -c
 ```
