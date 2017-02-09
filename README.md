@@ -14,11 +14,10 @@ Follow this instructions to set up your initial development environment.
 1. Install RVM
 ```
 gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
-gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
 ```
 2. Install 2.3.1 as the default
 ```
-rmv install 2.3.1
+rvm install 2.3.1
 ```
 
 3. Change permissions to make application file executable
