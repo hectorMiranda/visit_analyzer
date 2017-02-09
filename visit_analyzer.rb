@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 require 'rubygems'
 require 'csv'
-require_relative 'cluster'
-require_relative 'visit'
+require_relative './lib/cluster'
+require_relative './lib/visit'
 
 INFINITY = 1.0 / 0
 
